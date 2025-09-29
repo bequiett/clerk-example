@@ -35,12 +35,12 @@ export default function DashboardClientPage() {
     <div className='grid place-items-center flex flex-col gap-4'>
       <Image
         className="rounded-full"
-        src={user?.imageUrl ?? ""}
+        src={user?.imageUrl || ""}
         alt="Profile Image"
         width={100}
         height={100}
       />
-      <h1>Welcome, {user?.firstName}!</h1>
+      <h1>Welcome, {user?.firstName} to client-side dashboard!</h1>
       <p>
         Registered Email: { user?.primaryEmailAddress?.emailAddress }<br />
         Registered Date: { registeredDate }</p>
