@@ -10,7 +10,7 @@ export default function Courses({ courses }: CoursesProps) {
 		<div className="grid-1">
 			{courses.map((course: Course) => (
 				<div key={course.id} className="bg-blue-200 dark:bg-blue-900 p-4 m-4 rounded-lg">
-					<h2 className="text-lg text-gray-900 dark:text-gray-100">{course.title}</h2>
+					<h2 className="text-lg text-gray-900 dark:text-gray-100 font-bold">{course.title}</h2>
 					<small className="text-gray-700 dark:text-gray-300">Level: {course.level}</small>
 					<p className="mb-4 text-gray-800 dark:text-gray-200">{course.description}</p>
 					<Link
