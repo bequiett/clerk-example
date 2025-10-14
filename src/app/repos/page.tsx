@@ -30,7 +30,7 @@ export default async function ReposPage() {
       </h2>
       <ul>
         {repos.map((repo: Repository) => (
-          <li key={repo.id} className="bg-gray-100 m-4 p-4 rounded-md">
+          <li key={repo.id} className="bg-gray-100 m-4 p-4 rounded-md dark:bg-gray-800">
             <Link href={`/repos/${repo.name}`}>
               <h3 className="text-xl font-bold">{repo.name}</h3>
               <p>{repo.description}</p>
